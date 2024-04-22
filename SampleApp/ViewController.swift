@@ -49,6 +49,10 @@ class ViewController: UltraliteBaseViewController {
     private var textHandle: Int?
     private var tapTextHandle: Int?
     
+    private var autoScroller: ScrollLayout.AutoScroller?
+    
+    private var currentLayout: Ultralite.Layout?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,18 +68,20 @@ class ViewController: UltraliteBaseViewController {
     }
     
     @IBAction func showPicker() {
-        // show a pairing picker for user to connect to glasses
         showPairingPicker()
     }
     
     // Take control of the glasses.  Remember there could be another 3rd party app currently controlling the glasses.  The app in the foreground can take control away from someone else.
-    override func startControl() {
+    func startControl(device: Ultralite, layout: Ultralite.Layout) -> Bool {
         //UltraliteManager.shared.currentDevice?.setLayout(layout: .canvas, timeout: displayTimeout)
         // OR convience method startControl() on UltraliteBaseViewContoller
         
-        if !isActive {
-            super.startControl()
+        if currentLayout != layout {
+            currentLayout = layout
+            return device.requestControl(layout: layout, timeout: displayTimeout, hideStatusBar: true)
         }
+        
+        return true
     }
     
     // creates a text object with the text "Hello World" at dead center of display
@@ -84,7 +90,10 @@ class ViewController: UltraliteBaseViewController {
             return
         }
         
-        startControl()
+        if !startControl(device: device, layout: .canvas) {
+            print("ERROR: Unable to gain control of the device")
+            return
+        }
         
         if let textHandle = textHandle {
            _ = device.canvas.removeText(id: textHandle)
@@ -100,6 +109,12 @@ class ViewController: UltraliteBaseViewController {
             return
         }
         
+        if !startControl(device: device, layout: .canvas) {
+            print("ERROR: Unable to gain control of the device")
+            return
+        }
+        
+        
         let random = randomPoint()
         _ = device.canvas.moveText(id: textHandle, x: Int(random.x), y: Int(random.y))
         device.canvas.commit()
@@ -108,6 +123,11 @@ class ViewController: UltraliteBaseViewController {
     // removes created text object
     @IBAction func removeHelloWorld(sender: Any) {
         guard let device = UltraliteManager.shared.currentDevice, let textHandle = textHandle else {
+            return
+        }
+        
+        if !startControl(device: device, layout: .canvas) {
+            print("ERROR: Unable to gain control of the device")
             return
         }
         
@@ -123,7 +143,10 @@ class ViewController: UltraliteBaseViewController {
             return
         }
         
-        startControl()
+        if !startControl(device: device, layout: .canvas) {
+            print("ERROR: Unable to gain control of the device")
+            return
+        }
 
         guard let image1 = UIImage(named: "wait1")?.cgImage, let image2 = UIImage(named: "wait2")?.cgImage, let image3 = UIImage(named: "wait3")?.cgImage else {
             return
@@ -142,6 +165,11 @@ class ViewController: UltraliteBaseViewController {
             return
         }
         
+        if !startControl(device: device, layout: .canvas) {
+            print("ERROR: Unable to gain control of the device")
+            return
+        }
+        
         let randomPoint = randomPoint()
         if device.canvas.moveAnimation(x: Int(randomPoint.x), y: Int(randomPoint.y)) {
             device.canvas.commit()
@@ -151,6 +179,11 @@ class ViewController: UltraliteBaseViewController {
     // remove the animation
     @IBAction func removeAninimation(sender: Any) {
         guard let device = UltraliteManager.shared.currentDevice else {
+            return
+        }
+        
+        if !startControl(device: device, layout: .canvas) {
+            print("ERROR: Unable to gain control of the device")
             return
         }
         
@@ -165,7 +198,10 @@ class ViewController: UltraliteBaseViewController {
             return
         }
         
-        startControl()
+        if !startControl(device: device, layout: .canvas) {
+            print("ERROR: Unable to gain control of the device")
+            return
+        }
         
         let midx = (device.canvas.WIDTH / 2)
         let midy = (device.canvas.HEIGHT / 2)
@@ -192,10 +228,32 @@ class ViewController: UltraliteBaseViewController {
             return
         }
         
-        startControl()
+        if !startControl(device: device, layout: .canvas) {
+            print("ERROR: Unable to gain control of the device")
+            return
+        }
         
         device.canvas.clear(shouldClearBackground: true)
         device.canvas.commit()
+    }
+    
+    @IBAction func showScrollingText(_ sender: Any) {
+        guard let device = UltraliteManager.shared.currentDevice else {
+            return
+        }
+                        
+        if !startControl(device: device, layout: .scroll) {
+            print("ERROR: Unable to gain control of the device")
+            return
+        }
+        
+        if autoScroller == nil {
+            autoScroller = ScrollLayout.AutoScroller(stringToScroll: "The text can also scroll like a teleprompter with the scroll layout. This layout also supports several configuration options such as font size and scroll speed.", duration: 500)
+            autoScroller?.start()
+        } else {
+            autoScroller?.clear()
+            autoScroller = nil
+        }
     }
     
     // on detection of a single tap, displays the words "tap detected" for 4 seconds.
