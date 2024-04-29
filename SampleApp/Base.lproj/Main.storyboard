@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -26,11 +26,11 @@
                                     <action selector="showPicker" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Ul-vJ-XLu"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="5Nh-tK-scl">
-                                <rect key="frame" x="113" y="119" width="167" height="554.66666666666663"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="5Nh-tK-scl">
+                                <rect key="frame" x="110.33333333333333" y="131.66666666666663" width="172.66666666666669" height="589"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cdu-Ng-Tfm">
-                                        <rect key="frame" x="4" y="0.0" width="159.33333333333334" height="34.333333333333336"/>
+                                        <rect key="frame" x="6.6666666666666714" y="0.0" width="159.33333333333331" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Draw Background"/>
                                         <connections>
@@ -38,7 +38,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etB-D6-S2W">
-                                        <rect key="frame" x="0.0" y="74.333333333333343" width="167" height="34.333333333333343"/>
+                                        <rect key="frame" x="2.6666666666666714" y="69.333333333333343" width="167" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Create Hello World"/>
                                         <connections>
@@ -46,7 +46,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKC-qW-YDA">
-                                        <rect key="frame" x="4.6666666666666714" y="148.66666666666669" width="158" height="34.333333333333343"/>
+                                        <rect key="frame" x="7.3333333333333428" y="138.66666666666666" width="157.99999999999997" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Move Hello World"/>
                                         <connections>
@@ -54,7 +54,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fR-gC-vr2">
-                                        <rect key="frame" x="0.6666666666666714" y="223" width="165.66666666666663" height="34.333333333333314"/>
+                                        <rect key="frame" x="3.3333333333333428" y="208.00000000000003" width="165.66666666666666" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Delete Hello World"/>
                                         <connections>
@@ -62,7 +62,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2i-Zc-JM1">
-                                        <rect key="frame" x="6" y="297.33333333333331" width="155.33333333333334" height="34.333333333333314"/>
+                                        <rect key="frame" x="8.6666666666666714" y="277.33333333333337" width="155.33333333333331" height="34.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Create Animation"/>
                                         <connections>
@@ -70,7 +70,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EQ-kh-6QD">
-                                        <rect key="frame" x="10.666666666666671" y="371.66666666666669" width="146" height="34.333333333333314"/>
+                                        <rect key="frame" x="13.333333333333343" y="346.66666666666663" width="145.99999999999997" height="34.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Move Animation"/>
                                         <connections>
@@ -78,15 +78,23 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WK6-4y-hTG">
-                                        <rect key="frame" x="6.6666666666666714" y="446" width="154" height="34.333333333333314"/>
+                                        <rect key="frame" x="9.3333333333333428" y="416" width="153.99999999999997" height="34.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Delete Animation"/>
                                         <connections>
                                             <action selector="removeAninimationWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NEu-S4-heI"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRW-pQ-7Uo">
+                                        <rect key="frame" x="0.0" y="485.33333333333337" width="172.66666666666666" height="34.333333333333371"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Show Scrolling Text"/>
+                                        <connections>
+                                            <action selector="showScrollingText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qYa-ah-2rD"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlM-wr-HVy">
-                                        <rect key="frame" x="40" y="520.33333333333337" width="87" height="34.333333333333371"/>
+                                        <rect key="frame" x="42.666666666666671" y="554.66666666666674" width="87.000000000000014" height="34.333333333333371"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Clear All"/>
                                         <connections>
@@ -99,10 +107,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="5Nh-tK-scl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0w9-Wh-El3"/>
                             <constraint firstItem="C2g-CG-sOw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aN2-Kl-q0e"/>
-                            <constraint firstItem="5Nh-tK-scl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hUu-87-rna"/>
+                            <constraint firstItem="5Nh-tK-scl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gcT-DD-2xw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C2g-CG-sOw" secondAttribute="trailing" constant="20" id="igR-3C-lCF"/>
-                            <constraint firstItem="5Nh-tK-scl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="rTl-sW-Wzy"/>
                         </constraints>
                     </view>
                 </viewController>
