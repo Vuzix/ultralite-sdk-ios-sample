@@ -116,7 +116,7 @@ class ViewController: UltraliteBaseViewController {
         
         
         let random = randomPoint()
-        _ = device.canvas.moveText(id: textHandle, x: Int(random.x), y: Int(random.y))
+        _ = device.canvas.moveText(id: textHandle, x: Int(random.x), y: Int(random.y), duration: 1000)
         device.canvas.commit()
     }
     
@@ -248,8 +248,9 @@ class ViewController: UltraliteBaseViewController {
         }
         
         if autoScroller == nil {
-            autoScroller = ScrollLayout.AutoScroller(stringToScroll: "The text can also scroll like a teleprompter with the scroll layout. This layout also supports several configuration options such as font size and scroll speed.", duration: 500)
+            autoScroller = ScrollLayout.AutoScroller(stringToScroll: "The text can also scroll like a teleprompter with the scroll layout. This layout also supports several configuration options such as font size and scroll speed.", duration: 1000)
             autoScroller?.start()
+            autoScroller?.delegate = self
         } else {
             autoScroller?.clear()
             autoScroller = nil
@@ -286,6 +287,14 @@ class ViewController: UltraliteBaseViewController {
         let x = Int.random(in: 0..<(640 - 100))
         let y = Int.random(in: 0..<(480 - 100))
         return CGPoint(x: x, y: y)
+    }
+}
+
+extension ViewController: AutoScrollerDelegate {
+    
+    func done() {
+        autoScroller?.clear()
+        autoScroller = nil
     }
 }
 
