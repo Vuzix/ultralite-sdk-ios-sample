@@ -3,21 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2201D652C8A469300021926 /* UltraliteSDK in Frameworks */ = {isa = PBXBuildFile; productRef = E2201D642C8A469300021926 /* UltraliteSDK */; };
+		E230BD202CA7509D0042B9E2 /* temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230BD1F2CA7509D0042B9E2 /* temp.swift */; };
 		E2960AAC2AB9E57B0015D98D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2960AAB2AB9E57B0015D98D /* AppDelegate.swift */; };
 		E2960AAE2AB9E57B0015D98D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2960AAD2AB9E57B0015D98D /* SceneDelegate.swift */; };
 		E2960AB02AB9E57B0015D98D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2960AAF2AB9E57B0015D98D /* ViewController.swift */; };
 		E2960AB32AB9E57B0015D98D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2960AB12AB9E57B0015D98D /* Main.storyboard */; };
 		E2960AB52AB9E57C0015D98D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2960AB42AB9E57C0015D98D /* Assets.xcassets */; };
 		E2960AB82AB9E57C0015D98D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2960AB62AB9E57C0015D98D /* LaunchScreen.storyboard */; };
-		E2CEB2662B4EFA2800EE3A62 /* UltraliteSDK in Frameworks */ = {isa = PBXBuildFile; productRef = E2CEB2652B4EFA2800EE3A62 /* UltraliteSDK */; };
-		E2CEB2692B4EFE8B00EE3A62 /* UltraliteSDK in Frameworks */ = {isa = PBXBuildFile; productRef = E2CEB2682B4EFE8B00EE3A62 /* UltraliteSDK */; };
+		E2C7A7132CFE5E8B004EC61D /* UltraliteSDK in Frameworks */ = {isa = PBXBuildFile; productRef = E2C7A7122CFE5E8B004EC61D /* UltraliteSDK */; };
+		E2C7A7162CFE5EE5004EC61D /* UltraliteSDK in Frameworks */ = {isa = PBXBuildFile; productRef = E2C7A7152CFE5EE5004EC61D /* UltraliteSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E230BD1F2CA7509D0042B9E2 /* temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = temp.swift; sourceTree = "<group>"; };
 		E2960AA82AB9E57B0015D98D /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2960AAB2AB9E57B0015D98D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2960AAD2AB9E57B0015D98D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,8 +36,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2CEB2692B4EFE8B00EE3A62 /* UltraliteSDK in Frameworks */,
-				E2CEB2662B4EFA2800EE3A62 /* UltraliteSDK in Frameworks */,
+				E2C7A7162CFE5EE5004EC61D /* UltraliteSDK in Frameworks */,
+				E2C7A7132CFE5E8B004EC61D /* UltraliteSDK in Frameworks */,
+				E2201D652C8A469300021926 /* UltraliteSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +72,7 @@
 				E2960AB42AB9E57C0015D98D /* Assets.xcassets */,
 				E2960AB62AB9E57C0015D98D /* LaunchScreen.storyboard */,
 				E2960AB92AB9E57C0015D98D /* Info.plist */,
+				E230BD1F2CA7509D0042B9E2 /* temp.swift */,
 			);
 			path = SampleApp;
 			sourceTree = "<group>";
@@ -96,8 +101,9 @@
 			);
 			name = SampleApp;
 			packageProductDependencies = (
-				E2CEB2652B4EFA2800EE3A62 /* UltraliteSDK */,
-				E2CEB2682B4EFE8B00EE3A62 /* UltraliteSDK */,
+				E2201D642C8A469300021926 /* UltraliteSDK */,
+				E2C7A7122CFE5E8B004EC61D /* UltraliteSDK */,
+				E2C7A7152CFE5EE5004EC61D /* UltraliteSDK */,
 			);
 			productName = SampleApp;
 			productReference = E2960AA82AB9E57B0015D98D /* SampleApp.app */;
@@ -128,7 +134,7 @@
 			);
 			mainGroup = E2960A9F2AB9E57B0015D98D;
 			packageReferences = (
-				E2CEB2672B4EFE8B00EE3A62 /* XCRemoteSwiftPackageReference "UltraliteSDK-releases-iOS" */,
+				E2C7A7142CFE5EE5004EC61D /* XCLocalSwiftPackageReference "../ultralite/ultralite/UltraliteSDK" */,
 			);
 			productRefGroup = E2960AA92AB9E57B0015D98D /* Products */;
 			projectDirPath = "";
@@ -160,6 +166,7 @@
 				E2960AB02AB9E57B0015D98D /* ViewController.swift in Sources */,
 				E2960AAC2AB9E57B0015D98D /* AppDelegate.swift in Sources */,
 				E2960AAE2AB9E57B0015D98D /* SceneDelegate.swift in Sources */,
+				E230BD202CA7509D0042B9E2 /* temp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,25 +397,24 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		E2CEB2672B4EFE8B00EE3A62 /* XCRemoteSwiftPackageReference "UltraliteSDK-releases-iOS" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Vuzix/UltraliteSDK-releases-iOS";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
+/* Begin XCLocalSwiftPackageReference section */
+		E2C7A7142CFE5EE5004EC61D /* XCLocalSwiftPackageReference "../ultralite/ultralite/UltraliteSDK" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../ultralite/ultralite/UltraliteSDK;
 		};
-/* End XCRemoteSwiftPackageReference section */
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E2CEB2652B4EFA2800EE3A62 /* UltraliteSDK */ = {
+		E2201D642C8A469300021926 /* UltraliteSDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = UltraliteSDK;
 		};
-		E2CEB2682B4EFE8B00EE3A62 /* UltraliteSDK */ = {
+		E2C7A7122CFE5E8B004EC61D /* UltraliteSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E2CEB2672B4EFE8B00EE3A62 /* XCRemoteSwiftPackageReference "UltraliteSDK-releases-iOS" */;
+			productName = UltraliteSDK;
+		};
+		E2C7A7152CFE5EE5004EC61D /* UltraliteSDK */ = {
+			isa = XCSwiftPackageProductDependency;
 			productName = UltraliteSDK;
 		};
 /* End XCSwiftPackageProductDependency section */

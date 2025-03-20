@@ -53,6 +53,9 @@ class ViewController: UltraliteBaseViewController {
     
     private var currentLayout: Ultralite.Layout?
     
+    private var isConnectedListener: BondListener<Bool>?
+    
+    private var textMan: VuzixTextManager?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +64,16 @@ class ViewController: UltraliteBaseViewController {
         displayTimeout = 60
         // allow 1 tap
         maximumNumTaps = 1
+        
+        isConnectedListener = BondListener(listener: { [weak self] isConnected in
+            if !isConnected {
+                self?.currentLayout = nil
+            }
+            else {
+                self?.textMan = VuzixTextManager(vuzixDevice: UltraliteManager.shared.currentDevice!)
+            }
+        })
+        UltraliteManager.shared.currentDevice?.isConnected.bind(listener: isConnectedListener!)
     }
     
     override func onAppLeave() {
@@ -86,21 +99,32 @@ class ViewController: UltraliteBaseViewController {
     
     // creates a text object with the text "Hello World" at dead center of display
     @IBAction func createHelloWorld(sender: Any) {
+        
+        
         guard let device = UltraliteManager.shared.currentDevice else {
             return
         }
         
-        if !startControl(device: device, layout: .canvas) {
-            print("ERROR: Unable to gain control of the device")
-            return
+        textMan?.requestControl()
+        
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) { [weak self] in
+            self?.textMan?.sendText(text: "hello world", fontSize: 40)
         }
         
-        if let textHandle = textHandle {
-           _ = device.canvas.removeText(id: textHandle)
-        }
         
-        self.textHandle = device.canvas.createText(text: "Hello World", textAlignment: .center, textColor: .white, anchor: .center, xOffset: 0, yOffset: 0)
-        device.canvas.commit()
+//
+//        if !startControl(device: device, layout: .canvas) {
+//            print("ERROR: Unable to gain control of the device")
+//            return
+//        }
+//        
+//        if let textHandle = textHandle {
+//           _ = device.canvas.removeText(id: textHandle)
+//        }
+//        
+//        self.textHandle = device.canvas.createText(text: "Hello World", textAlignment: .center, textColor: .white, anchor: .center, xOffset: 0, yOffset: 0)
+//        device.canvas.commit()
     }
     
     // move created text object to a random point
@@ -235,6 +259,8 @@ class ViewController: UltraliteBaseViewController {
         
         device.canvas.clear(shouldClearBackground: true)
         device.canvas.commit()
+        
+        UltraliteManager.shared.unlink()
     }
     
     @IBAction func showScrollingText(_ sender: Any) {

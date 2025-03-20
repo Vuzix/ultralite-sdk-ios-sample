@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E22C0F372CD022C000FFEFAC /* UltraliteSDK in Frameworks */ = {isa = PBXBuildFile; productRef = E22C0F362CD022C000FFEFAC /* UltraliteSDK */; };
+		E22C0F732CD1360700FFEFAC /* UltraliteWatchSample Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E22C0F662CD1360500FFEFAC /* UltraliteWatchSample Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E22C0F7D2CD136A800FFEFAC /* UltraliteSDK in Frameworks */ = {isa = PBXBuildFile; productRef = E22C0F7C2CD136A800FFEFAC /* UltraliteSDK */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E22C0F712CD1360700FFEFAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2A08BB52CCFEDDD00CBCE16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E22C0F652CD1360500FFEFAC;
+			remoteInfo = "UltraliteWatchSample Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E22C0F772CD1360700FFEFAC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E22C0F732CD1360700FFEFAC /* UltraliteWatchSample Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E22C0F662CD1360500FFEFAC /* UltraliteWatchSample Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UltraliteWatchSample Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2A08BBD2CCFEDDD00CBCE16 /* UltraliteSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltraliteSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E22C0F612CD12A9300FFEFAC /* Exceptions for "UltraliteSwiftSample" folder in "UltraliteSwiftSample" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E2A08BBC2CCFEDDD00CBCE16 /* UltraliteSwiftSample */;
+		};
+		E22C0F792CD1361D00FFEFAC /* Exceptions for "UltraliteSwiftSample" folder in "UltraliteWatchSample Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				BleScanServiceModel.swift,
+				DevicePickerView.swift,
+			);
+			target = E22C0F652CD1360500FFEFAC /* UltraliteWatchSample Watch App */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E22C0F672CD1360500FFEFAC /* UltraliteWatchSample Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "UltraliteWatchSample Watch App";
+			sourceTree = "<group>";
+		};
+		E2A08BBF2CCFEDDD00CBCE16 /* UltraliteSwiftSample */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E22C0F612CD12A9300FFEFAC /* Exceptions for "UltraliteSwiftSample" folder in "UltraliteSwiftSample" target */,
+				E22C0F792CD1361D00FFEFAC /* Exceptions for "UltraliteSwiftSample" folder in "UltraliteWatchSample Watch App" target */,
+			);
+			path = UltraliteSwiftSample;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E22C0F632CD1360500FFEFAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E22C0F7D2CD136A800FFEFAC /* UltraliteSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2A08BBA2CCFEDDD00CBCE16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E22C0F372CD022C000FFEFAC /* UltraliteSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E22C0F7B2CD136A800FFEFAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2A08BB42CCFEDDD00CBCE16 = {
+			isa = PBXGroup;
+			children = (
+				E2A08BBF2CCFEDDD00CBCE16 /* UltraliteSwiftSample */,
+				E22C0F672CD1360500FFEFAC /* UltraliteWatchSample Watch App */,
+				E22C0F7B2CD136A800FFEFAC /* Frameworks */,
+				E2A08BBE2CCFEDDD00CBCE16 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2A08BBE2CCFEDDD00CBCE16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2A08BBD2CCFEDDD00CBCE16 /* UltraliteSwiftSample.app */,
+				E22C0F662CD1360500FFEFAC /* UltraliteWatchSample Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E22C0F652CD1360500FFEFAC /* UltraliteWatchSample Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E22C0F742CD1360700FFEFAC /* Build configuration list for PBXNativeTarget "UltraliteWatchSample Watch App" */;
+			buildPhases = (
+				E22C0F622CD1360500FFEFAC /* Sources */,
+				E22C0F632CD1360500FFEFAC /* Frameworks */,
+				E22C0F642CD1360500FFEFAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E22C0F672CD1360500FFEFAC /* UltraliteWatchSample Watch App */,
+			);
+			name = "UltraliteWatchSample Watch App";
+			packageProductDependencies = (
+				E22C0F7C2CD136A800FFEFAC /* UltraliteSDK */,
+			);
+			productName = "UltraliteWatchSample Watch App";
+			productReference = E22C0F662CD1360500FFEFAC /* UltraliteWatchSample Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2A08BBC2CCFEDDD00CBCE16 /* UltraliteSwiftSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2A08BCB2CCFEDDE00CBCE16 /* Build configuration list for PBXNativeTarget "UltraliteSwiftSample" */;
+			buildPhases = (
+				E2A08BB92CCFEDDD00CBCE16 /* Sources */,
+				E2A08BBA2CCFEDDD00CBCE16 /* Frameworks */,
+				E2A08BBB2CCFEDDD00CBCE16 /* Resources */,
+				E22C0F772CD1360700FFEFAC /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E22C0F722CD1360700FFEFAC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E2A08BBF2CCFEDDD00CBCE16 /* UltraliteSwiftSample */,
+			);
+			name = UltraliteSwiftSample;
+			packageProductDependencies = (
+				E22C0F362CD022C000FFEFAC /* UltraliteSDK */,
+			);
+			productName = UltraliteSwiftSample;
+			productReference = E2A08BBD2CCFEDDD00CBCE16 /* UltraliteSwiftSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2A08BB52CCFEDDD00CBCE16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					E22C0F652CD1360500FFEFAC = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					E2A08BBC2CCFEDDD00CBCE16 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = E2A08BB82CCFEDDD00CBCE16 /* Build configuration list for PBXProject "UltraliteSwiftSample" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2A08BB42CCFEDDD00CBCE16;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E22C0F352CD022C000FFEFAC /* XCRemoteSwiftPackageReference "UltraliteSDK-releases-iOS" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E2A08BBE2CCFEDDD00CBCE16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2A08BBC2CCFEDDD00CBCE16 /* UltraliteSwiftSample */,
+				E22C0F652CD1360500FFEFAC /* UltraliteWatchSample Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E22C0F642CD1360500FFEFAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2A08BBB2CCFEDDD00CBCE16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E22C0F622CD1360500FFEFAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2A08BB92CCFEDDD00CBCE16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E22C0F722CD1360700FFEFAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E22C0F652CD1360500FFEFAC /* UltraliteWatchSample Watch App */;
+			targetProxy = E22C0F712CD1360700FFEFAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E22C0F752CD1360700FFEFAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UltraliteWatchSample Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = GFX2SCZJS9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = UltraliteWatchSample;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.vuzix.apps.UltraliteSwiftSample;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vuzix.apps.UltraliteSwiftSample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.6;
+			};
+			name = Debug;
+		};
+		E22C0F762CD1360700FFEFAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UltraliteWatchSample Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = GFX2SCZJS9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = UltraliteWatchSample;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.vuzix.apps.UltraliteSwiftSample;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vuzix.apps.UltraliteSwiftSample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.6;
+			};
+			name = Release;
+		};
+		E2A08BC92CCFEDDE00CBCE16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E2A08BCA2CCFEDDE00CBCE16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2A08BCC2CCFEDDE00CBCE16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UltraliteSwiftSample/Preview Content\"";
+				DEVELOPMENT_TEAM = GFX2SCZJS9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UltraliteSwiftSample/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "We would like to use bluetooth to communicate with Vuzix hardware";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vuzix.apps.UltraliteSwiftSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E2A08BCD2CCFEDDE00CBCE16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UltraliteSwiftSample/Preview Content\"";
+				DEVELOPMENT_TEAM = GFX2SCZJS9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UltraliteSwiftSample/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "We would like to use bluetooth to communicate with Vuzix hardware";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vuzix.apps.UltraliteSwiftSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E22C0F742CD1360700FFEFAC /* Build configuration list for PBXNativeTarget "UltraliteWatchSample Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E22C0F752CD1360700FFEFAC /* Debug */,
+				E22C0F762CD1360700FFEFAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2A08BB82CCFEDDD00CBCE16 /* Build configuration list for PBXProject "UltraliteSwiftSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2A08BC92CCFEDDE00CBCE16 /* Debug */,
+				E2A08BCA2CCFEDDE00CBCE16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2A08BCB2CCFEDDE00CBCE16 /* Build configuration list for PBXNativeTarget "UltraliteSwiftSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2A08BCC2CCFEDDE00CBCE16 /* Debug */,
+				E2A08BCD2CCFEDDE00CBCE16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E22C0F352CD022C000FFEFAC /* XCRemoteSwiftPackageReference "UltraliteSDK-releases-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Vuzix/UltraliteSDK-releases-iOS";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E22C0F362CD022C000FFEFAC /* UltraliteSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E22C0F352CD022C000FFEFAC /* XCRemoteSwiftPackageReference "UltraliteSDK-releases-iOS" */;
+			productName = UltraliteSDK;
+		};
+		E22C0F7C2CD136A800FFEFAC /* UltraliteSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E22C0F352CD022C000FFEFAC /* XCRemoteSwiftPackageReference "UltraliteSDK-releases-iOS" */;
+			productName = UltraliteSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E2A08BB52CCFEDDD00CBCE16 /* Project object */;
+}
